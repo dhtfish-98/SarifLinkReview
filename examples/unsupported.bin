@@ -1,0 +1,1 @@
+{"version": "7.0", "runs": [{"tool": {"driver": {"name": "synthetic", "rules": [{"id": "R1"}]}}, "artifacts": [{"location": {"uri": "private/path"}}], "results": [{"ruleIndex": 0, "ruleId": "R1", "message": {"text": "private message"}, "locations": [{"physicalLocation": {"artifactLocation": {"index": 0}, "region": {"startLine": 1, "endLine": 2}}}]}]}]}

@@ -1,0 +1,14 @@
+{
+  "project": "SarifLinkReview",
+  "status": "PASS",
+  "test_count": 17,
+  "wheel": "sariflinkreview-1.0.0-py3-none-any.whl",
+  "wheel_sha256": "e2657a0b4c28c6b1ba7590a934582d7b5307708e5293f48ed23e9bb126feb684",
+  "verification": "Local supported and malformed input tests, wheel build, separate install, imported package origin and CLI checks",
+  "reproduction": [
+    "python -m pip install .",
+    "python -m unittest discover -s tests -v",
+    "python -m pip wheel --no-deps --wheel-dir artifacts ."
+  ],
+  "limits": "Point-in-time engineering evidence only; CVP qualification and approval remain OPEN"
+}

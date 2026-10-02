@@ -1,0 +1,95 @@
+{
+  "source_repo": "microsoft/sarif-python-om",
+  "source_commit": "f99b8edb126e2a4ad8a61ffee63113887a6af035",
+  "scope": "SARIF 2.1.0 selected driver/rule/artifact physical-location relations, required record shapes, duplicate-key rejection, rule-id/index consistency, artifact-index bounds and region ordering/ranges.",
+  "license": "MIT",
+  "source_files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1162,
+      "lines": 21,
+      "sha256": "9906940f61b1f0b533fa7d99baf55178b2808fbe113ea51dfbfad8572ccd5f2b",
+      "url": "https://raw.githubusercontent.com/microsoft/sarif-python-om/f99b8edb126e2a4ad8a61ffee63113887a6af035/LICENSE"
+    },
+    {
+      "path": "README.rst",
+      "bytes": 2487,
+      "lines": 57,
+      "sha256": "7fcd9ee9332c263482b1972fcc8fb1a615d042f938211abc2d806f29aff693ae",
+      "url": "https://raw.githubusercontent.com/microsoft/sarif-python-om/f99b8edb126e2a4ad8a61ffee63113887a6af035/README.rst"
+    },
+    {
+      "path": "sarif-schema-2.1.0.json",
+      "bytes": 112320,
+      "lines": 3370,
+      "sha256": "6352a05f9d03f181b8d9c71a46bdacc4fcff9d8ade5364858b425ba0c0994ed7",
+      "url": "https://raw.githubusercontent.com/microsoft/sarif-python-om/f99b8edb126e2a4ad8a61ffee63113887a6af035/sarif-schema-2.1.0.json"
+    },
+    {
+      "path": "sarif_om/_artifact_location.py",
+      "bytes": 583,
+      "lines": 14,
+      "sha256": "90c25f507b9c34143e46e9bb566683c1a614b236122d82f454b44eb8c08ae2e6",
+      "url": "https://raw.githubusercontent.com/microsoft/sarif-python-om/f99b8edb126e2a4ad8a61ffee63113887a6af035/sarif_om/_artifact_location.py"
+    },
+    {
+      "path": "sarif_om/_physical_location.py",
+      "bytes": 731,
+      "lines": 14,
+      "sha256": "de4eedc42c444f81cc7b0d8e48a3c2d7369ee5f4d6273a6e2ae0ff5e0f67b8e9",
+      "url": "https://raw.githubusercontent.com/microsoft/sarif-python-om/f99b8edb126e2a4ad8a61ffee63113887a6af035/sarif_om/_physical_location.py"
+    },
+    {
+      "path": "sarif_om/_region.py",
+      "bytes": 1224,
+      "lines": 21,
+      "sha256": "5df83ae1d1220dcd2c149f2cb90765e7fabee89ef46da5380103f158850d3d97",
+      "url": "https://raw.githubusercontent.com/microsoft/sarif-python-om/f99b8edb126e2a4ad8a61ffee63113887a6af035/sarif_om/_region.py"
+    },
+    {
+      "path": "sarif_om/_reporting_descriptor.py",
+      "bytes": 1507,
+      "lines": 23,
+      "sha256": "13ceff93363336fdf3035491ec211879cd4016e8f2125f6e7a5f60a412aec627",
+      "url": "https://raw.githubusercontent.com/microsoft/sarif-python-om/f99b8edb126e2a4ad8a61ffee63113887a6af035/sarif_om/_reporting_descriptor.py"
+    },
+    {
+      "path": "sarif_om/_result.py",
+      "bytes": 2788,
+      "lines": 39,
+      "sha256": "2a5cc23d0cc237a12cf5a01cb0966e55990d675734b17b19d8ce70fff3732ce3",
+      "url": "https://raw.githubusercontent.com/microsoft/sarif-python-om/f99b8edb126e2a4ad8a61ffee63113887a6af035/sarif_om/_result.py"
+    },
+    {
+      "path": "sarif_om/_run.py",
+      "bytes": 2891,
+      "lines": 37,
+      "sha256": "6e6711a966647e43b4a89cd950336f39d5ca8a5fbd9d21ef40540c6804c1a756",
+      "url": "https://raw.githubusercontent.com/microsoft/sarif-python-om/f99b8edb126e2a4ad8a61ffee63113887a6af035/sarif_om/_run.py"
+    }
+  ],
+  "new_runtime_files": [
+    "src/sariflinkreview/__init__.py",
+    "src/sariflinkreview/__main__.py",
+    "src/sariflinkreview/core.py"
+  ],
+  "implementation_files": [
+    {
+      "path": "src/sariflinkreview/__init__.py",
+      "sha256": "38582950d26e35b221eb5e109dc3283861d1300bcd8b1a0bef233bc8ff76a761",
+      "bytes": 49
+    },
+    {
+      "path": "src/sariflinkreview/__main__.py",
+      "sha256": "889f673c2145e28095264339dbb3be024859a0bd7242435c479850567be2fd49",
+      "bytes": 49
+    },
+    {
+      "path": "src/sariflinkreview/core.py",
+      "sha256": "fcb2a4b2a18bc9124a7479dd743acc6974f46ac275e05601eb356319aca068bd",
+      "bytes": 10497
+    }
+  ],
+  "source_review": "The upstream object model consists of generated data classes and a schema. New code validates the explicitly selected report relationships; it does not claim model-library API equivalence or full JSON Schema conformance.",
+  "review_boundary": "Complete new runtime review; selected upstream format/entry-point review. Unselected upstream platform code is not claimed audited or rewritten."
+}
