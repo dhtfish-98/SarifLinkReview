@@ -1,5 +1,7 @@
 # SarifLinkReview
 
+New implementation author: **dhtfish98**. Current package version: **1.0.2**.
+
 Checks unusable or inconsistent scanner reports before incident triage while suppressing messages and artifact paths. External/unresolved rule metadata stays OPEN.
 
 ## Supported project scope
