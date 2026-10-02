@@ -4,7 +4,7 @@ Checks unusable or inconsistent scanner reports before incident triage while sup
 
 ## Supported project scope
 
-SARIF 2.1.0 selected driver/rule/artifact physical-location relations, required record shapes, duplicate-key rejection, rule-id/index consistency, artifact-index bounds and region ordering/ranges.
+SARIF 2.1.0 selected driver/rule/artifact physical-location relations, required record shapes, duplicate-key rejection, rule-id/index consistency, artifact-index bounds and region ordering/ranges. Redundant legacy/`result.rule` IDs and indices must agree. Driver rule IDs may carry one additional hierarchical component. URI-base maps are checked for shape, cycles, depth, bounded concatenation and declared parent chains. URI/index identity is checked after base resolution, without fetching files. The URI comparison profile supports simple ASCII relative paths and `file`, `http` and `https` URIs; percent encoding, query/fragment components, dot segments, complex authorities and other schemes remain OPEN. Unknown bases and redacted base roots remain OPEN. Message-ID lookup, modern rule references that omit a lookup index, GUID/tool-component selectors and nested-artifact semantics remain OPEN. Present selected fields cannot use JSON null as a substitute for omission. URI processing has a report-wide 16 MiB character budget, including base expansion and artifact references, with at most 64 base links and 65,536 characters per resolved URI.
 
 This repository implements that entire selected standalone scope. It does not claim that the original upstream platform has been rewritten in full.
 
@@ -15,7 +15,7 @@ python -m pip install .
 sariflinkreview examples/valid.bin
 ```
 
-Supply one local regular file. No symlinks or automatic artifact discovery are accepted. The CLI prints JSON; exit 0 means supported checks completed, exit 1 means a structural failure, and exit 2 means unsupported/incomplete analysis. Each successful read includes the input SHA-256 and byte count. Paths, contents, report messages and identities are suppressed. The input is never modified.
+Supply one local regular file. The file CLI requires OS `O_NOFOLLOW` and `O_NONBLOCK` support; missing safety flags return OPEN before opening the path. This file-reader contract was verified on macOS/Linux; native Windows file reading is outside the validated profile. No symlinks or automatic artifact discovery are accepted. The CLI prints JSON; exit 0 means supported checks completed, exit 1 means a structural failure, and exit 2 means unsupported/incomplete analysis. Each successful read includes the input SHA-256 and byte count. Paths, contents, report messages and identities are suppressed. The input is never modified.
 
 ## Explicit limits and boundaries
 

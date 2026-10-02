@@ -86,10 +86,11 @@
     },
     {
       "path": "src/sariflinkreview/core.py",
-      "sha256": "fcb2a4b2a18bc9124a7479dd743acc6974f46ac275e05601eb356319aca068bd",
-      "bytes": 10497
+      "sha256": "1500b22e2eb5e198e7dbde597f63e46020f9458e2194d076607b86a3c237d63b",
+      "bytes": 18771
     }
   ],
   "source_review": "The upstream object model consists of generated data classes and a schema. New code validates the explicitly selected report relationships; it does not claim model-library API equivalence or full JSON Schema conformance.",
-  "review_boundary": "Complete new runtime review; selected upstream format/entry-point review. Unselected upstream platform code is not claimed audited or rewritten."
+  "review_boundary": "Complete new runtime review; selected upstream format/entry-point review. Unselected upstream platform code is not claimed audited or rewritten.",
+  "current_reaudit": "REAUDIT_20261002.json"
 }
