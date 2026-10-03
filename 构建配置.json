@@ -1,0 +1,35 @@
+{
+  "schema": "project-build-layout.v1",
+  "project": "SarifLinkReview",
+  "author": "dhtfish98",
+  "kind": "python",
+  "base_public_commit": "5d26dadd7563b7adda602f8775842ed90d39176d",
+  "restored_inputs": [
+    {
+      "original": "LICENSE",
+      "stored": "项目文档/LICENSE",
+      "sha256": "9906940f61b1f0b533fa7d99baf55178b2808fbe113ea51dfbfad8572ccd5f2b"
+    },
+    {
+      "original": "ORIGIN.md",
+      "stored": "项目文档/ORIGIN.md",
+      "sha256": "5d8381b6fc7dc4999379eeeb895459095fc71d41c297d7e584e7087ae4a5668c"
+    },
+    {
+      "original": "README.md",
+      "stored": "项目文档/README.md",
+      "sha256": "c14f96b47aa767b9a0ebe5fd1ef6e6183f65b6a79b78ae5afefb8a5886a8c496"
+    },
+    {
+      "original": "VALIDATION.md",
+      "stored": "项目文档/VALIDATION.md",
+      "sha256": "b71a69ca15edf2fda60f6d60b33c68d12e65b4a3a27696ae79bfd3ecbe913240"
+    },
+    {
+      "original": "examples/README.md",
+      "stored": "项目文档/examples/README.md",
+      "sha256": "dfd29fdab2ad983f9c5222b60d119a4b174783e5e03cae143d76f4972c811b31"
+    }
+  ],
+  "platform_entries": []
+}
